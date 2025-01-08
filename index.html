@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Score Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Images/India.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Score Card</h1>
+    </header>
+    <main>
+      <div id="score-card">
+        <div class="team-score">
+          <div id="features">
+            <p class="tag">Run<span class="sign" id="score">0</span></p>
+            <p class="tag">Wicket<span class="sign" id="wicket">0</span></p>
+            <p class="tag">Four<span class="sign" id="fours">0</span></p>
+            <p class="tag">Six<span class="sign" id="sixes">0</span></p>
+            <p class="tag">Overs<span class="sign" id="overs">0.0</span></p>
+            <div id="actions">
+              <button class="action-button" id="new">New</button>
+              <button class="action-button" id="reset">Reset</button>
+              <button class="action-button" id="save">Save</button>
+              <button class="action-button" id="download">Download</button>
+            </div>
+            <div id="message">
+              <span>This is Your Updation Box</span>
+            </div>
+          </div>
+          <div id="buttonsOFfeatures">
+            <div class="button-containerOne">
+              <button class="button runBtn" id="decRun">-</button>
+              <button class="button runBtn">1</button>
+              <button class="button runBtn">2</button>
+              <button class="button runBtn">3</button>
+              <button class="button runBtn">4</button>
+              <button class="button runBtn">6</button>
+            </div>
+            <div class="button-containerOne">
+              <button class="button" id="incWic">+</button>
+              <button class="button" id="decWic">-</button>
+            </div>
+            <div class="button-containerOne">
+              <button class="button" id="incFour">+</button>
+              <button class="button" id="decFour">-</button>
+            </div>
+            <div class="button-containerOne">
+              <button class="button" id="incSix">+</button>
+              <button class="button" id="decSix">-</button>
+            </div>
+            <div class="button-containerOne">
+              <button class="button" id="incBall">+</button>
+              <button class="button" id="decBall">-</button>
+            </div>
+            <div id="image">
+              <img
+                src="Images/India.png"
+                alt="Indian National Flag"
+                id="logo"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="batsManOne">
+          <div class="featurePersonal">
+            <div class="name">
+              <p>Name <input type="text" class="nameOfBat" /></p>
+            </div>
+            <p class="tag">Run<span class="sign" id="runPer1">0</span></p>
+            <p class="tag">Ball Faced<span class="sign">0</span></p>
+            <p class="tag">Single<span class="sign" id="singlePer1">0</span></p>
+            <p class="tag">Double<span class="sign" id="doublePer1">0</span></p>
+            <p class="tag">Triple<span class="sign" id="triplePer1">0</span></p>
+            <p class="tag">Four<span class="sign" id="fourPer1">0</span></p>
+            <p class="tag">Six<span class="sign" id="sixPer1">0</span></p>
+          </div>
+          <div class="buttonsPersonal">
+            <div class="button-container">
+              <button class="button" id="decRunPers">-</button>
+              <button class="button" id="oneRunPers">1</button>
+              <button class="button" id="twoRunPers">2</button>
+              <button class="button" id="threeRunPers">3</button>
+              <button class="button" id="fourRunPers">4</button>
+              <button class="button" id="sixRunPers">6</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incBallPers">+</button>
+              <button class="button" id="decBallPers">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incSingPers">+</button>
+              <button class="button" id="decSingPers">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incDobPers">+</button>
+              <button class="button" id="decDobPers">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incTriPers">+</button>
+              <button class="button" id="decTriPers">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incFourPers">+</button>
+              <button class="button" id="decFourPers">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incSixPers">+</button>
+              <button class="button" id="decSixPers">-</button>
+            </div>
+          </div>
+        </div>
+        <div id="batsManTwo">
+          <div class="featurePersonal">
+            <div class="name">
+              <p>Name <input type="text" class="nameOfBat" /></p>
+            </div>
+            <p class="tag">Run<span class="sign">0</span></p>
+            <p class="tag">Ball Faced<span class="sign">0</span></p>
+            <p class="tag">Single<span class="sign">0</span></p>
+            <p class="tag">Double<span class="sign">0</span></p>
+            <p class="tag">Triple<span class="sign">0</span></p>
+            <p class="tag">Four<span class="sign">0</span></p>
+            <p class="tag">Six<span class="sign">0</span></p>
+          </div>
+          <div class="buttonsPersonal">
+            <div class="button-container">
+              <button class="button" id="decRunPers2">-</button>
+              <button class="button" id="oneRunPers2">1</button>
+              <button class="button" id="twoRunPers2">2</button>
+              <button class="button" id="threeRunPers2">3</button>
+              <button class="button" id="fourRunPers2">4</button>
+              <button class="button" id="sixRunPers2">6</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incBallPers2">+</button>
+              <button class="button" id="decBallPers2">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incSingPers2">+</button>
+              <button class="button" id="decSingPers2">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incDobPers2">+</button>
+              <button class="button" id="decDobPers2">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incTriPers2">+</button>
+              <button class="button" id="decTriPers2">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incFourPers2">+</button>
+              <button class="button" id="decFourPers2">-</button>
+            </div>
+            <div class="button-containerOne personalBtn">
+              <button class="button" id="incSixPers2">+</button>
+              <button class="button" id="decSixPers2">-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div id="misc">
+        <div class="misclleanous-targets card">
+          <p class="tag">Target <input type="text" class="num" /></p>
+          <p class="tag">Over <input class="num" /></p>
+          <div class="bowlerRun">
+            <p class="tag super">Extras<span class="sign" id="extraScore">0</span></p>
+            <button class="button" id="incExtra">+</button>
+            <button class="button" id="decExtra">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="tag super" >By<span class="sign" id="byScore">0</span></p>
+            <button class="button" id="incBy">+</button>
+            <button class="button" id="decBy">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="tag super" >Wide<span class="sign" id="wideScore">0</span></p>
+            <button class="button" id="incWide">+</button>
+            <button class="button" id="decWide">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="tag super" >No<span class="sign" id="noScore">0</span></p>
+            <button class="button" id="incNo">+</button>
+            <button class="button" id="decNo">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tags newtag">
+            Bowler Name <input type="text" class="names" />
+          </p>
+          <div class="ball">
+            <p class="tags newtag">Balls</p>
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+          </div>
+          <div class="wic">
+            <p class="tags newtag">Wicket</p>
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Runs <span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Fours<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Sixes<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tags newtag">
+            Bowler Name <input type="text" class="names" />
+          </p>
+          <div class="ball">
+            <p class="tags newtag">Balls</p>
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+          </div>
+          <div class="wic">
+            <p class="tags newtag">Wicket</p>
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Runs <span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Fours<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Sixes<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tags newtag">
+            Bowler Name <input type="text" class="names" />
+          </p>
+          <div class="ball">
+            <p class="tags newtag">Balls</p>
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+          </div>
+          <div class="wic">
+            <p class="tags newtag">Wicket</p>
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Runs <span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Fours<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Sixes<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tags newtag">
+            Bowler Name <input type="text" class="names" />
+          </p>
+          <div class="ball">
+            <p class="tags newtag">Balls</p>
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+          </div>
+          <div class="wic">
+            <p class="tags newtag">Wicket</p>
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Runs <span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Fours<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Sixes<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tags newtag">
+            Bowler Name <input type="text" class="names" />
+          </p>
+          <div class="ball">
+            <p class="tags newtag">Balls</p>
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+            <input type="radio" name="balls" class="styled-radio" />
+          </div>
+          <div class="wic">
+            <p class="tags newtag">Wicket</p>
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+            <input type="radio" name="wicket" class="styled-radio" />
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Runs <span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Fours<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+          <div class="bowlerRun">
+            <p class="oldTag">Sixes<span class="sign">0</span></p>
+            <button class="button">+</button>
+            <button class="button">-</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

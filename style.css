@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    #ff9933 30%,
+    #ffffff 30%,
+    #0078d7 50%,
+    #ffffff 70%,
+    #138808 70%
+  );
+}
+
+#score-card {
+  display: flex;
+  background-color: aliceblue;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  overflow: hidden;
+}
+.team-score {
+  background-color: #138808;
+  display: flex;
+  height: 398px;
+  margin: 10px;
+  width: max-content;
+  border-radius: 5px;
+}
+
+#actions {
+  height: 60px;
+  justify-content: center;
+  text-align: center;
+  line-height: 60px;
+}
+
+#batsManOne {
+  display: flex;
+  height: max-content;
+  margin: 10px;
+  width: max-content;
+  background-color: #138808;
+  border-radius: 5px;
+}
+
+#batsManTwo {
+  display: flex;
+  height: max-content;
+  margin: 10px;
+  width: max-content;
+  background-color: #138808;
+  border-radius: 5px;
+}
+
+.tag {
+  margin: 10px;
+  background-color: #ff9933;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 520;
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 3px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0078d7;
+  color: white;
+}
+
+#buttonsOFfeatures {
+  justify-content: center;
+  text-align: center;
+  margin-top: 3px;
+}
+.button-containerOne {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.buttonsPersonal {
+  justify-content: center;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.name {
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.name p {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.nameOfBat {
+  height: 20px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.action-button {
+  padding: 7px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #0078d7;
+  font-weight: bold;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: white;
+  color: #0078d7;
+}
+
+#message {
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+#logo {
+  height: 100px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#misc {
+  display: flex;
+  margin-top: 5px;
+  background-color: aliceblue;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bowlerRun {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.oldTag {
+  background-color: #ff9933;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.newtag {
+  background-color: rgb(30, 0, 255);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.card {
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  background-color: rgb(44, 169, 98);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.num {
+  height: 18px;
+  width: 50px;
+}
+.super {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: 7.5px;
+}
+
+.styled-radio {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.styled-radio:checked {
+  background-color: #ec0832;
+  border-color: #0056b3;
+}
+
+.styled-radio:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
